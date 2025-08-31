@@ -13,7 +13,7 @@ jobs:
           owner="shadowcopyrz"
           repo="ESET-KGEN-COPY"
           
-          response=$(curl https://api.github.com/repos/rzc0d3r/ESET-KeyGen/releases/latest)
+          response=$(curl https://api.github.com/repos/tomay3000/ESET-KeyGen/releases/latest)
           assets_url=$(echo "$response" | jq -r ".assets_url")
           src_code_archive_url=$(echo "$response" | jq -r ".zipball_url")
           tag_name=$(echo "$response" | jq -r ".tag_name")
